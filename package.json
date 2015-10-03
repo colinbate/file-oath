@@ -1,0 +1,31 @@
+{
+  "name": "file-oath",
+  "version": "1.0.0",
+  "description": "Simple promise-based API for file IO.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel --optional es7.functionBind -o index.js index.es6",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/colinbate/file-oath.git"
+  },
+  "keywords": [
+    "files",
+    "file",
+    "io",
+    "write",
+    "read"
+  ],
+  "author": "Colin Bate <colin@colinbate.com>",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/colinbate/file-oath#readme",
+  "devDependencies": {
+    "babel": "^5.8.23"
+  },
+  "dependencies": {
+    "pify": "^2.2.0"
+  }
+}
