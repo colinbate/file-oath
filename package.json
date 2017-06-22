@@ -1,16 +1,17 @@
 {
   "name": "file-oath",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple promise-based API for file IO.",
   "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/babel --optional es7.functionBind -o index.js index.es6",
+    "build": "tsc",
     "prepublish": "npm run build"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://bitbucket.org/colinbate/file-oath.git"
+    "type": "mercurial",
+    "url": "https://bitbucket.org/colinbate/file-oath"
   },
   "keywords": [
     "files",
@@ -19,11 +20,18 @@
     "write",
     "read"
   ],
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "author": "Colin Bate <colin@colinbate.com>",
   "license": "MIT",
   "homepage": "https://bitbucket.org/colinbate/file-oath#readme",
   "devDependencies": {
-    "babel": "^5.8.23"
+    "@types/node": "^8.0.1",
+    "@types/pify": "^0.0.28",
+    "tslint": "^5.4.3",
+    "typescript": "^2.3.4"
   },
   "dependencies": {
     "pify": "^2.2.0"

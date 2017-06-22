@@ -1,2 +1,5 @@
 node_modules
-index.es6
+index.ts
+tsconfig.json
+tslint.json
+yarn.lock
